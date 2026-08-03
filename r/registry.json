@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "kybernesis",
+  "homepage": "https://kybernesis.ai",
+  "items": [
+    {
+      "name": "arcana",
+      "type": "registry:item",
+      "title": "Kybernesis Arcana",
+      "description": "Durable long-term memory for eve agents: Arcana MCP connection, recall/remember/brain-note skills, and recall-first instructions.",
+      "dependencies": ["@kybernesis/arcana"],
+      "envVars": { "ARCANA_API_KEY": "", "ARCANA_WORKSPACE": "" },
+      "files": [
+        {
+          "path": "registry/arcana.ts",
+          "type": "registry:file",
+          "target": "agent/extensions/arcana.ts"
+        }
+      ]
+    }
+  ]
+}
