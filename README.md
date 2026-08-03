@@ -11,4 +11,4 @@ eve add @kybernesis/arcana
 
 ## Items
 
-- **arcana** — durable long-term memory via [Kybernesis Arcana](https://arcana.kybernesis.ai): MCP connection, recall/remember/brain-note skills, recall-first instructions. Package: [`@kybernesis/arcana`](https://www.npmjs.com/package/@kybernesis/arcana) ([source](https://github.com/KybernesisAI/arcana-eve)).
+- **arcana** — durable long-term memory via [Kybernesis Arcana](https://kybernesis.ai/arcana): MCP connection, recall/remember/brain-note skills, recall-first instructions. Package: [`@kybernesis/arcana`](https://www.npmjs.com/package/@kybernesis/arcana) ([source](https://github.com/KybernesisAI/arcana-eve)).
