@@ -5,7 +5,7 @@ A [shadcn-format](https://ui.shadcn.com/docs/registry) integration registry for 
 ## Use it
 
 ```bash
-eve registry add @kybernesis=https://kybernesis-registry.vercel.app/r/{name}.json
+eve registry add @kybernesis=https://registry.kybernesis.ai/r/{name}.json
 eve add @kybernesis/arcana
 ```
 
