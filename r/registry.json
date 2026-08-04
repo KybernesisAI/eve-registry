@@ -8,13 +8,38 @@
       "type": "registry:item",
       "title": "Kybernesis Arcana",
       "description": "Durable long-term memory for eve agents: Arcana MCP connection, recall/remember/brain-note skills, and recall-first instructions.",
-      "dependencies": ["@kybernesis/arcana"],
-      "envVars": { "ARCANA_API_KEY": "", "ARCANA_WORKSPACE": "" },
+      "dependencies": [
+        "@kybernesis/arcana"
+      ],
+      "envVars": {
+        "ARCANA_API_KEY": "",
+        "ARCANA_WORKSPACE": ""
+      },
       "files": [
         {
           "path": "registry/arcana.ts",
           "type": "registry:file",
           "target": "agent/extensions/arcana.ts"
+        }
+      ]
+    },
+    {
+      "name": "enterprise",
+      "type": "registry:item",
+      "title": "Kybernesis Enterprise",
+      "description": "Control-plane governance for eve agents: offline token verification and per-agent grant enforcement (invite / grant / revoke from the Kybernesis admin).",
+      "dependencies": [
+        "@kybernesis/enterprise"
+      ],
+      "envVars": {
+        "KYBERNESIS_ISSUER": "",
+        "KYBERNESIS_AGENT": ""
+      },
+      "files": [
+        {
+          "path": "registry/enterprise.ts",
+          "type": "registry:file",
+          "target": "agent/channels/eve.ts"
         }
       ]
     }
