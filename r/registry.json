@@ -42,6 +42,31 @@
           "target": "agent/channels/eve.ts"
         }
       ]
+    },
+    {
+      "name": "multiplayer",
+      "type": "registry:item",
+      "title": "Kybernesis Multiplayer",
+      "description": "Shared Slack threads with per-speaker verified identity, attributed context, no-re-mention continuation, and dual-surface (channel vs DM) sessions.",
+      "dependencies": [
+        "@kybernesis/multiplayer",
+        "@vercel/connect"
+      ],
+      "envVars": {
+        "SLACK_CONNECTOR_UID": ""
+      },
+      "files": [
+        {
+          "path": "registry/multiplayer.ts",
+          "type": "registry:file",
+          "target": "agent/channels/slack.ts"
+        },
+        {
+          "path": "registry/multiplayer-instructions.md",
+          "type": "registry:file",
+          "target": "agent/instructions/multiplayer.md"
+        }
+      ]
     }
   ]
 }
