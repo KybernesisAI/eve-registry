@@ -67,6 +67,27 @@
           "target": "agent/instructions/multiplayer.md"
         }
       ]
+    },
+    {
+      "name": "evals",
+      "type": "registry:item",
+      "title": "Kybernesis Evals",
+      "description": "The baseline QA suite for Kybernesis agents: memory, routing, and smoke behaviors with every production hardening lesson as a default.",
+      "dependencies": [
+        "@kybernesis/evals"
+      ],
+      "files": [
+        {
+          "path": "registry/evals.ts",
+          "type": "registry:file",
+          "target": "evals/kybernesis.eval.ts"
+        },
+        {
+          "path": "registry/evals-config.ts",
+          "type": "registry:file",
+          "target": "evals/evals.config.ts"
+        }
+      ]
     }
   ]
 }
